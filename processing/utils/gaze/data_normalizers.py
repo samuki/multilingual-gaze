@@ -61,6 +61,8 @@ class DundeeDataNormalizer:
         self.frags = [frag for frag in self.files]
 
     def read_subjs(self):
+        print(self.files)
+        print(self.frags)
         self.subjs = [subj for subj in self.files[self.frags[0]]]
         print(self.subjs)
 

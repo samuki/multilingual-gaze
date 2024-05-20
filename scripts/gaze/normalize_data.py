@@ -26,7 +26,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-dg", "--data_gaze_dir", type=str,
-                        default="../../data/gaze")
+                        default="data/gaze")
     parser.add_argument("-ts", "--tasks", type=str, nargs="+",
                         default=["dundee", "geco", "zuco"])
     parser.add_argument("-sp", "--split_percs", type=json.loads,

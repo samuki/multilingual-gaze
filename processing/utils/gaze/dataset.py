@@ -1,4 +1,5 @@
 import os
+import joblib
 
 import numpy as np
 import pandas as pd
@@ -83,6 +84,12 @@ class GazeDataset(Dataset):
         preds_pd.to_csv(filen)
 
         print("saved.")
+        
+        # Save scaler
+        joblib.dump(scaler, f'feature_scaler_{self.task}.pkl')
+        
+        print("Saved scaler.")
+        
 
     def pad_targets(self):
         """
