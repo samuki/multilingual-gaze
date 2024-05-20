@@ -1,0 +1,8 @@
+__pycache__
+
+slurm_scripts
+runs
+mlruns
+
+*.pth
+events.*
