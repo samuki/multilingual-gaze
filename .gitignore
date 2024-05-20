@@ -8,3 +8,5 @@ mlruns
 events.*
 
 .vscode
+
+raw_data
